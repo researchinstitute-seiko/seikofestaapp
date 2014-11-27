@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="com/sistem/general/HomeActivity.java|com/sistem/general/animation/|com/sistem/general/animation/Chronos.java|com/sistem/general/animation/CopyOfBezierInterpolator.java|com/sistem/general/animation/CopyOfChangeValueInterpolator.java|com/sistem/general/animation/CopyOfInterpolator.java|com/sistem/general/animation/CopyOfLinearInterpolator.java|com/sistem/general/animation/CopyOfQuadraticInterpolator.java|com/sistem/general/animation/__Interpolator.java|com/sistem/general/animation/___Interpolator.java|com/sistem/sistem/Indicium.java|com/sistem/sistem/new_indicium.java|oldsource/" kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

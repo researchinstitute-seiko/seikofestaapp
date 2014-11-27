@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SiSTEM</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_start">StartActivity</string>
+    <string name="title_activity_time_table">TimeTableActivity</string>
+    <string name="crush_report_text">Oooooops!! I crashed, but I sent a report to my developer to help him fix the issue!</string>
+    <string name="title_activity_description">DescriptionActivity</string>
+    <string name="title_activity_videos">VideosActivity</string>
+    <string name="title_activity_play_video">PlayVideoActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="title_activity_two_dmap">TwoDMapActivity</string>
+
+</resources>

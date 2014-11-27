@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sistem.sistem"
+    android:installLocation="auto"
+    android:versionCode="4"
+    android:versionName="1.2" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="18" />
+
+    <!-- <uses-permission android:name="android.permission.READ_LOGS" /> -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- android:debuggable="false" -->
+    <application
+        android:name="com.sistem.sistem.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.sistem.sistem.HomeActivity"
+            android:label="聖光祭" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sistem.sistem.StartActivity"
+            android:label="SiSTEM" >
+        </activity>
+        <activity
+            android:name="com.sistem.sistem.EventsActivity"
+            android:label="Events" >
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name="com.sistem.sistem.DescriptionActivity"
+            android:label="案内" >
+        </activity>
+        <activity
+            android:name="com.sistem.sistem.ThumbnailListView"
+            android:label="Videos" >
+        </activity>
+        <activity
+            android:name="com.sistem.sistem.QRActivity"
+            android:label="SiSTEM QR Reader" >
+        </activity>
+        <activity
+            android:name="com.sistem.sistem.modelviewer2.MapActivity"
+            android:label="3D Map"
+            android:parentActivityName="com.sistem.sistem.HomeActivity" >
+        </activity>
+        <activity
+            android:name="com.sistem.sistem.PlayVideoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_play_video"
+            android:parentActivityName="com.sistem.sistem.VideosActivity"
+            android:theme="@style/FullscreenTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sistem.sistem.VideosActivity" />
+        </activity>
+        <activity
+            android:name="com.sistem.sistem.AboutActivity"
+            android:label="@string/title_activity_about" >
+        </activity>
+        <activity
+            android:name="com.sistem.sistem.TwoDMapActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_two_dmap"
+            android:theme="@style/FullscreenTheme" >
+        </activity>
+    </application>
+
+</manifest>

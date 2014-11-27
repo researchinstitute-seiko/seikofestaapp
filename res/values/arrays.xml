@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="filter_type">
+        <item >ステージ企画</item>
+        <item >食品</item>
+        <item >趣味研</item>
+        <item >バンド</item>
+        <item >その他</item>
+    </string-array>
+    
+</resources>

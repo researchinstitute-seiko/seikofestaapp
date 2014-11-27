@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:orientation="vertical"
+    android:padding="0dp"
+    tools:context=".HomeActivity" >
+    <FrameLayout
+        android:id="@+id/root"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+	    <SurfaceView
+	        android:id="@+id/BackVideo"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_gravity="center"
+	        android:clickable="false" 
+	        >
+	    </SurfaceView>
+	    
+	    <com.sistem.sistem.MyButton1
+                        android:id="@+id/btnskip"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|bottom"
+                        android:text="Skip"
+                        android:layout_margin="15dp"
+	android:visibility="gone"
+                        android:gravity="right"
+                        tools:ignore="HardcodedText" />
+                    
+
+	</FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/theWholeThing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:background="#00000000" >
+		<!-- Space just for icon -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="#00000000"
+            >
+			
+        </FrameLayout>
+        <com.sistem.sistem.SwipingText android:layout_width="match_parent"
+            android:layout_height="30dp" android:id="@+id/newswindow"
+            android:visibility="invisible"
+            />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipChildren="false"
+                android:clipToPadding="false" >
+
+                <LinearLayout
+                    android:id="@+id/Buttons"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="#00000000"
+                    android:clipChildren="false"
+                    android:clipToPadding="false"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    
+                    android:scrollbars="vertical" >
+
+ 					<View
+ 					    android:layout_width="0dp"
+ 					    android:layout_height="0dp"
+ 					    android:layout_weight="1" 
+ 					    >
+
+				    </View>
+
+                    <com.sistem.sistem.MyButton1
+                        android:id="@+id/btn1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/button_height"
+                        android:background="@drawable/my_button_1"
+                        android:text="Map"
+                        tools:ignore="HardcodedText"
+                        />
+
+				 	<View
+				        android:layout_width="0dp"
+				        android:layout_height="0dp"
+				        android:layout_weight="1" >
+				    </View>
+
+                    <com.sistem.sistem.MyButton1
+                        android:id="@+id/btn2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/button_height"
+                        android:background="@drawable/my_button_1"
+                        android:text="Events"
+                        tools:ignore="HardcodedText" />
+                    
+					<View
+				        android:layout_width="0dp"
+				        android:layout_height="0dp"
+				        android:layout_weight="1" >
+				    </View>
+
+                    <com.sistem.sistem.MyButton1
+                        android:id="@+id/btn3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/button_height"
+                        android:background="@drawable/my_button_1"
+                        android:text="QR Reader"
+                        tools:ignore="HardcodedText" />
+
+					<View
+				        android:layout_width="0dp"
+				        android:layout_height="0dp"
+				        android:layout_weight="1" >
+				    </View>
+
+                    <com.sistem.sistem.MyButton1
+                        android:id="@+id/btn4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/button_height"
+                        android:background="@drawable/my_button_1"
+                        android:text="Videos"
+                        tools:ignore="HardcodedText" />
+
+					<View
+				        android:layout_width="0dp"
+				        android:layout_height="0dp"
+				        android:layout_weight="1" >
+				    </View>
+
+                    <com.sistem.sistem.MyButton1
+                        android:id="@+id/btn5"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/button_height"
+                        android:background="@drawable/my_button_1"
+                        android:text="Official Web Site"
+                        tools:ignore="HardcodedText" />
+
+					 <View
+				        android:layout_width="0dp"
+				        android:layout_height="0dp"
+				        android:layout_weight="1" >
+				    </View>
+
+                    <com.sistem.sistem.MyButton1
+                        android:id="@+id/btn6"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/button_height"
+                        android:background="@drawable/my_button_1"
+                        android:text="About"
+                        tools:ignore="HardcodedText" />
+
+                     <View
+				        android:layout_width="0dp"
+				        android:layout_height="0dp"
+				        android:layout_weight="1" >
+				    </View>
+                </LinearLayout>
+
+                <com.sistem.sistem.MyGallery
+                    android:id="@+id/gallery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5" />
+
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+    <com.sistem.sistem.DescriptionWindow
+        android:id="@+id/descriptionWindow1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="150dp" >
+            
+    </com.sistem.sistem.DescriptionWindow>
+
+</FrameLayout>
